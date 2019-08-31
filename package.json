@@ -1,5 +1,6 @@
 {
-    "main": "vaadin-pagination.js",
-    "module": "vaadin-pagination.js",
-    "version": "1.0.0"
+  "name": "vaadin-pagination",
+  "main": "vaadin-pagination.js",
+  "module": "vaadin-pagination.js",
+  "version": "1.0.0"
   }
