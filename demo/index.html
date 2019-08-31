@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>vaadin-pagination demo</title>
+
+    <script type="module" src="../vaadin-pagination.js"></script>
+    <style>
+      .centered{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic vaadin-pagination demo</h3>
+      <vaadin-pagination page=1 total=101 limit=10 size=2></vaadin-pagination>
+
+    </div>
+  </body>
+</html>
