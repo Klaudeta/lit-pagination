@@ -25,9 +25,8 @@ class LitPagination extends LitElement{
             margin: 0px 4px;
             padding: 2px 8px;
             /*margin: 0px;*/
-            display: inline-block;
             position: relative;
-            min-width: fit-content;
+            min-width: 30px;
 
         }
 
