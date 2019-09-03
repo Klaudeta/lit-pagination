@@ -2,9 +2,9 @@ import { LitElement, html, css } from "lit-element";
 
 import '@polymer/paper-button/paper-button';
 import '@polymer/paper-icon-button/paper-icon-button';
-import './pagination-icons.js';
+import '@polymer/iron-iconset-svg';
 
-class VaadinPagination extends LitElement{
+class LitPagination extends LitElement{
 
     static get styles() {
         return css`
@@ -169,7 +169,6 @@ class VaadinPagination extends LitElement{
                 </defs>
             </svg>
         </iron-iconset-svg>
-
         <div class="paginator-page-container" ?hidden="${!this.hasPage}">
             <paper-icon-button icon="pagination-icons:fast-rewind" @click="${event => this.onBegin()}" ?hidden="${!this.hasBefore}"></paper-icon-button>
             <paper-icon-button icon="pagination-icons:navigate-before" @click="${event => this.onBefore()}" ?hidden="${!this.hasBefore}"></paper-icon-button>
@@ -275,4 +274,4 @@ class VaadinPagination extends LitElement{
 
 }
 
-customElements.define('vaadin-pagination', VaadinPagination);
+customElements.define('lit-pagination', LitPagination);
