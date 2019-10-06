@@ -215,7 +215,6 @@ class LitPagination extends LitElement{
                 items.push(num);
             }
             this.items = items;
-            console.log('paginated', page, 'from', firstIndex, 'to', lastIndex, limit, '/', this.pages, ':', items);
         }
     }
 
@@ -242,16 +241,11 @@ class LitPagination extends LitElement{
     }
 
     isCurrent(index, page) {
-        console.log(index);
-
-        console.log(index == page);
-        console.log(page);
         return index == page;
     }
 
     onChange(item) {
         this.page = item;
-        console.log(this.id, 'pagination changed to', this.page);
         this.requestUpdate();
     }
 
