@@ -232,7 +232,7 @@ class LitPagination extends LitElement{
     }
 
     _lastIndex(page, size) {
-        let index = page + size;
+        let index = parseInt(page) + parseInt(size);
         if (index > this.pages) {
             return this.pages;
         } else {
@@ -254,7 +254,7 @@ class LitPagination extends LitElement{
     }
 
     onNext(event) {
-        this.page = this.page < this.pages ? this.page + 1 : this.pages;
+        this.page = this.page < this.pages ? parseInt(this.page) + 1 : this.pages;
     }
     onBegin(event) {
         this.page = 1;
